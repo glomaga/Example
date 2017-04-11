@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.14" icons="true">  
+  <object id="1" language="java" name="Sequence.CheckinForm" project="EjemplosBasicos" 
+    file="/EjemplosBasicos/src/Sequence/CheckinForm.java" binary="false" label="checkinForm" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="2">      
+      <position height="397" width="114" x="5" y="126"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="21" width="0" x="0" y="400"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="21" width="0" x="0" y="481"/>    
+    </execution>  
+  </object>  
+  <object id="9" language="java" name="Sequence.CheckingController" project="EjemplosBasicos" 
+    file="/EjemplosBasicos/src/Sequence/CheckingController.java" binary="false" label="&lt;static&gt;" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="286" y="0"/>    
+    <execution id="4">      
+      <position height="294" width="156" x="123" y="147"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="273"/>    
+    </execution>  
+  </object>  
+  <object id="22" language="java" name="Sequence.LibraryMember" project="EjemplosBasicos" 
+    file="/EjemplosBasicos/src/Sequence/LibraryMember.java" binary="false" label="member" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="11">      
+      <position height="21" width="0" x="0" y="168"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="315"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="21" width="0" x="0" y="399"/>    
+    </execution>  
+  </object>  
+  <object id="23" language="java" name="Sequence.Checkoutrecord" project="EjemplosBasicos" 
+    file="/EjemplosBasicos/src/Sequence/Checkoutrecord.java" binary="false" label="storeRecord" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="210"/>    
+    </execution>  
+  </object>  
+  <object id="24" language="java" name="Sequence.libraryDBSubsys" project="EjemplosBasicos" 
+    file="/EjemplosBasicos/src/Sequence/libraryDBSubsys.java" binary="false" label="&lt;static&gt;" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="357"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="checkBook(Sequence.Book,Sequence.LibraryMember):void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="clearCheckoutFields():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="displayCheckoutInfo():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="10" operation="getCheckoutRec(Sequence.Book):Sequence.Checkoutrecord" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="getDueDate():java.util.Date" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="computeFine(java.util.Date):double" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="removeRecord(Sequence.Book):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="removeRecord(java.lang.Object,Sequence.Checkoutrecord):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="getId():java.lang.Object" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>
+</sequence-diagram>
